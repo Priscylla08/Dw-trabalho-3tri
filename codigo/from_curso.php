@@ -14,7 +14,7 @@
         <input type="text" name="nome_curso"><br><br>
 
         Carga horária: <br>
-        <input type="number" name="carga_horaria"><br><br>
+        <input type="text" name="carga_horaria"><br><br>
 
         <input type="submit" value="Salvar">
 
