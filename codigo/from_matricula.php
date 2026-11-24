@@ -10,11 +10,11 @@
 
     <form action="salvar_matricula.php" method="POST">
 
-        Data da matrícula: <br>
-        <input type="date" name="data_matricula"><br><br>
+        matrícula: <br>
+        <input type="date" name="matricula"><br><br>
 
-        ID do aluno: <br>
-        <input type="number" name="id_aluno"><br><br>
+        aluno: <br>
+        <input type="number" name="aluno"><br><br>
 
         Curso: <br>
         <select name="id_curso">
