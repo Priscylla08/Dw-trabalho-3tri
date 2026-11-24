@@ -18,7 +18,6 @@
 
         Curso: <br>
         <select name="id_curso">
-            <option value="">Selecione um curso</option>
             <option value="1">Técnico em Informática</option>
             <option value="2">Técnico em Agropecuária</option>
             <option value="3">Técnico em Meio Ambiente</option>
