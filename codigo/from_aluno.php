@@ -25,7 +25,7 @@
         Foto do aluno: <br>
         <input type="file" name="foto_aluno"><br><br>
 
-        <input type="submit" value="Salva_aluno.php">
+        <input type="submit" value="Salvar">
 
     </form>
 

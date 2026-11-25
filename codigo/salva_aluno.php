@@ -17,7 +17,7 @@ $caminho_destino = "fotos_user/" . $novo_nome;
 
 move_uploaded_file($caminho_temporario, $caminho_destino);
 
-$sql = "INSERT INTO idaluno (nome, email, data_nascimento, cpf, foto_aluno) VALUES (?, ?, ?, ?, ?)";
+$sql = "INSERT INTO aluno (nome, email, data_nascimento, cpf, foto_aluno) VALUES (?, ?, ?, ?, ?)";
 
 $comando = mysqli_prepare($conexao, $sql);
 
