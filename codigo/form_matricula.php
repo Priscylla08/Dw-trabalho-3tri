@@ -10,18 +10,8 @@
 
     <form action="salvar_matricula.php" method="POST">
 
-        matrícula: <br>
-        <input type="text" name="matricula"><br><br>
-
-        aluno: <br>
-        <input type="text" name="aluno"><br><br>
-
-        Curso: <br>
-        <select name="id_curso">
-            <option value="1">Técnico em Informática</option>
-            <option value="2">Técnico em Agropecuária</option>
-            <option value="3">Técnico em Meio Ambiente</option>
-        </select><br><br>
+         data matricula: <br>
+        <input type="date" name="data_matricula"><br><br>
 
         <input type="submit" value="Salvar">
 
