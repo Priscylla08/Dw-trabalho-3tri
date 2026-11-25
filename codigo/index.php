@@ -9,12 +9,12 @@
     <form action="verificar_login.php" method="post">
         E-mail: <br>
         <input type="text" name="email"> <br>
-        Senha: <br>
-        <input type="text" name="senha"> <br>
+        nome: <br>
+        <input type="text" name="nome"> <br>
 
         <input type="submit" value="Logar">
     </form>
 
-    <a href="form_usuario.php">Não tenho cadastro.</a>
+    <a href="form_aluno.php">Não tenho cadastro.</a>
 </body>
 </html>
