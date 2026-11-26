@@ -11,13 +11,13 @@
     <form action="salvar_curso.php" method="POST">
 
         Nome do curso: <br>
-           <input type="checkbox" name="informatica" value="sim">
+           <input type="checkbox" name="nome_curso" value="informatica">
             Informática
             <br>
-            <input type="checkbox" name="meio" value="sim">
+            <input type="checkbox" name="nome_curso" value="meio ambiente">
             Meio Ambiente
             <br>
-            <input type="checkbox" name="agropecuaria" value="sim">
+            <input type="checkbox" name="nome_curso" value="agropecuaria">
             Agropecuaria
             <br>
             Carga horária: <br>
