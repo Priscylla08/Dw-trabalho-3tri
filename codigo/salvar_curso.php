@@ -1,8 +1,6 @@
 <?php
 require_once "conexao.php";
- 
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-    {
+
 $nome_curso = $_POST['nome_curso'];
 $carga_horaria = $_POST['carga_horaria'];
 
@@ -15,5 +13,5 @@ mysqli_stmt_bind_param($comando, "ss", $nome_curso, $carga_horaria);
 mysqli_stmt_execute($comando);
 
 header("Location: index.php"); 
-    }
+
 ?>
