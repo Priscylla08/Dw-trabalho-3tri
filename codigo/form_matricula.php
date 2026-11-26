@@ -55,12 +55,6 @@ session_start();
      Agropecuaria
        <br>
 
-
-
-
-
-
-
          <?php
     if (isset($_POST['curso'])) {
         $id_curso = $_SESSION['id_curso'];
