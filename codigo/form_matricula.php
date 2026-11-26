@@ -11,12 +11,13 @@ session_start();
 </head>
 
 <body>
-    <form action="form_grupo_alunos.php" method="post">
+    <form action="form_matricula.php" method="post">
         <h1>Cadastro matricula</h1>
 
-        Escolha uma aluno: <br>
-        <select name="curso">
-            <?php
+        nome do aluno <br>
+        <input type="text" value="aluno">
+           
+           <?php
             require_once "conexao.php";
 
             $sql = "SELECT * FROM aluno";
@@ -34,11 +35,33 @@ session_start();
             ?>
         </select> <br><br>
 
-        <input type="submit" value="Avançar">
+
     </form>
+    
+
+        <h2>Lista de curso</h2>
+        <form action="form.php" method="post">
+              
+        
+       curso
+      <br>
+     <input type="checkbox" value="nome_curso">
+     Informatica
+       <br>
+        <input type="checkbox" value="nome_curso">
+     Meio Ambiente
+       <br>
+        <input type="checkbox" value="nome_curso">
+     Agropecuaria
+       <br>
 
 
-    <?php
+
+
+
+
+
+         <?php
     if (isset($_POST['curso'])) {
         $id_curso = $_SESSION['id_curso'];
         $id_curso = $_POST['curso'];
@@ -52,23 +75,20 @@ session_start();
         $curso = mysqli_stmt_get_result($comando);
 
     ?>
-        <h2>Lista de curso</h2>
-        <form action="salvar_curso.php" method="post">
-            Nome do curso: <br>
-            <input type="text" name="nome_curso"> <br><br>
+
 
             <?php
             while ($curso = mysqli_fetch_array($curso)) {
                 $id_curso = $curso['id_curso'];
                 $nome_curso = $curso['nome'];
             ?>
-                <input type="checkbox" name="curso[]" value="<?php echo $id_curso; ?>"> <?php echo $nome_curso; ?> <br>
+                <input type="checkbox" name="curso[]" value="informatica"<?php echo $id_curso; ?>"> <?php echo $nome_curso; ?> <br>
         <?php
             }
         }
         ?>
         <br>
-        <input type="submit" value="Salvar curso">
+        <input type="submit" value="avançar">
         </form>
 </body>
 
