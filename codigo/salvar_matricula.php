@@ -1,6 +1,8 @@
 <?php
    require_once "conexao.php";
    
+   $idmatricula = $_SESSION['idmatricula'];
+
    $data_matricula = $_POST['data_matricula'];
    
    $sql = "INSERT INTO matricula (data_matricula) VALUES (?)";
