@@ -9,7 +9,7 @@
 <body>
 
     <form action="salvar_aluno.php" method="POST" enctype="multipart/form-data">
-
+    
         Nome do aluno: <br>
         <input type="text" name="nome"><br><br>
 

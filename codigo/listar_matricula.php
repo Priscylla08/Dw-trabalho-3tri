@@ -34,13 +34,10 @@ session_start();
             }
             ?>
         </select> <br><br>
-
-
-    </form>
     
 
         <h2>Lista de curso</h2>
-        <form action="form.php" method="post">
+        <form>
               
         
        curso
