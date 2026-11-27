@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="salvar_aluno.php" method="POST" enctype="multipart/form-data">
+    <form action="salvar_curso.php" method="POST" enctype="multipart/form-data">
     
         Nome do aluno: <br>
         <input type="text" name="nome"><br><br>
@@ -28,6 +28,6 @@
         <input type="submit" value="Salvar">
 
     </form>
-
+       <a href="form_curso.php">Não tenho cadastro.</a>
 </body>
 </html>
